@@ -2,7 +2,7 @@ import logging
 from flask import Flask, render_template
 from flask_ask import Ask, question, session
 
-from beatrice_virtuelle.games import PecheNumerique
+from beatrice_virtuelle.games import PecheNumerique, Additions
 
 app = Flask(__name__)
 ask = Ask(app, "/")
@@ -13,7 +13,8 @@ def new_game():
     return question("Bienvenue dans la classe virtuelle de Béatrice. À quel jeu veux-tu jouer?")
 
 games = {
-    PecheNumerique.intent: PecheNumerique
+    PecheNumerique.intent: PecheNumerique,
+    Additions.intent: Additions
 }
 
 def register_game_intent(name, handler):
