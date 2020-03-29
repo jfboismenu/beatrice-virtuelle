@@ -1,3 +1,5 @@
+from random import randint
+
 from .base_game import BaseGame
 
 def number_between():
@@ -46,12 +48,9 @@ def digit_func(scale, template, base, to_add):
 def add_digit_func():
     base = randint(10, 1000)
     scale = _pick_one_of([1, 10, 100])
-    to_add = randint(0, 9)
+    to_add = randint(1, 9)
     question = _pick_one_of(_add_units_questions)
-    return (
-        digit_func(scale, question, base, to_add),
-        base + (to_add * scale)
-    )
+    return digit_func(scale, question, base, to_add)
  
 
 class PecheNumerique(BaseGame):
@@ -61,5 +60,4 @@ class PecheNumerique(BaseGame):
 
     @classmethod
     def ask_question(cls):
-        index = _pick_one_of(cls._question_types)
-        return cls._question_types[index]()
+        return _pick_one_of(cls._question_types)()
