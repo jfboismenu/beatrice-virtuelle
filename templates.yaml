@@ -1,4 +1,4 @@
-welcome: Bienvenue au jeu de mémoire. Je vais dire trois nombres et tu devras les répéter à reculons. Es-tu prêt?
+welcome: Bienvenue dans la classe virtuelle de Béatrice. À quel jeu veux-tu jouer?
 
 round: Peux-tu répéter les nombres suivants à reculons? {{ numbers|join(", ") }}.
 
