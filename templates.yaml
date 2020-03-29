@@ -1,0 +1,7 @@
+welcome: Bienvenue au jeu de mémoire. Je vais dire trois nombres et tu devras les répéter à reculons. Es-tu prêt?
+
+round: Peux-tu répéter les nombres suivants à reculons? {{ numbers|join(", ") }}.
+
+win: Beau travail!
+
+lose: Désolé, ce n'est pas la bonne réponse.
