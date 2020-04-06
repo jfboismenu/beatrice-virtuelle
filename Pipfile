@@ -6,9 +6,9 @@ verify_ssl = true
 [dev-packages]
 
 [packages]
-flask-ask = {editable = true,path = "./../flask-ask"}
 cryptography = "*"
 pyopenssl = "*"
+flask-ask = {git = "https://github.com/jfboismenu/flask-ask.git",ref = "beatrice-virtuelle"}
 
 [requires]
 python_version = "3.7"
