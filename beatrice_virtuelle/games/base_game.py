@@ -1,8 +1,14 @@
+# -*- coding: utf-8 -*-
+# Unlicense
+#
+# See LICENSE at the root of this project for more info.
+
+
 class BaseGame:
     @classmethod
     def handle_answer(cls, given, expected):
         if expected != given:
-            response = "Désolé, la réponse était %d." % expected
+            response = f"Désolé, la réponse était {expected}."
         else:
             response = "Bonne réponse!"
 

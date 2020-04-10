@@ -1,6 +1,12 @@
+# -*- coding: utf-8 -*-
+# Unlicense
+#
+# See LICENSE at the root of this project for more info.
+
 from random import randint
 
 from .base_game import BaseGame
+
 
 class Additions(BaseGame):
     intent = "Additions"
@@ -14,4 +20,4 @@ class Additions(BaseGame):
         # The pick another number 0 and the biggest number that when
         # addd to the first one would give the max.
         another_number = randint(0, cls._max - number)
-        return ("%d, plus, %d." % (number, another_number), number + another_number)
+        return (f"{number}, plus, {another_number}.", number + another_number)

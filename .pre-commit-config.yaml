@@ -1,0 +1,22 @@
+# -*- coding: utf-8 -*-
+# Unlicense
+#
+# See LICENSE at the root of this project for more info.
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.4.0
+    hooks:
+    - id: check-ast
+      language_version: python3
+    - id: check-case-conflict
+    - id: check-executables-have-shebangs
+    - id: check-merge-conflict
+    - id: end-of-file-fixer
+    - id: requirements-txt-fixer
+    - id: trailing-whitespace
+  - repo: https://github.com/ambv/black
+    rev: 19.10b0
+    hooks:
+    - id: black
+      language_version: python3
