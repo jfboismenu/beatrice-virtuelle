@@ -11,7 +11,7 @@ from .base_game import BaseGame
 class Additions(BaseGame):
     intent = "Additions"
 
-    _max = 14
+    _max = 20
 
     @classmethod
     def ask_question(cls):
