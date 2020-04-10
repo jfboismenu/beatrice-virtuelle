@@ -18,8 +18,8 @@ logging.getLogger("flask_ask").setLevel(logging.DEBUG)
 def new_game():
     return question(
         "<speak>Bienvenue dans la classe virtuelle de Béatrice. À quel jeu veux-tu jouer? "
-        "Tu peux dire en tout temps <emphasis>Pêche Numérique</emphasis> ou "
-        "<emphasis>Additions</emphasis> pour changer de jeu.</speak>"
+        'Tu peux dire en tout temps <emphasis level="strong">Pêche Numérique</emphasis> ou '
+        '<emphasis level="strong">Additions</emphasis> pour changer de jeu.</speak>'
     )
 
 
